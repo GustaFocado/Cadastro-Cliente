@@ -12,53 +12,12 @@
     <li>Validação de CPF e Email</li>
 </ul>
 
-<h2>Requisitos</h2>
+<h2>Ferramentas utilizadas</h2>
 <ul>
     <li>Java 11+</li>
     <li>Spring Boot 2.6.x</li>
     <li>MySQL</li>
     <li>Maven</li>
-</ul>
-
-<h2>Dependências</h2>
-<ul>
-    <li>spring-boot-starter-web</li>
-    <li>spring-boot-starter-data-jpa</li>
-    <li>mysql-connector-java</li>
-    <li>hibernate-validator</li>
-    <li>springfox-boot-starter (Swagger)</li>
-    <li>lombok (opcional)</li>
-</ul>
-
-<h2>Configuração do Banco de Dados</h2>
-<p>Para configurar o banco de dados MySQL, altere o arquivo <code>application.properties</code> com as informações do seu ambiente:</p>
-<pre>
-<code>
-spring.datasource.url=jdbc:mysql://localhost:3306/clientesdb?useSSL=false&serverTimezone=UTC
-spring.datasource.username=root
-spring.datasource.password=sua_senha
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
-</code>
-</pre>
-
-<h2>Execução do Projeto</h2>
-<ol>
-    <li>Clone o repositório para sua máquina local</li>
-    <li>Configure o MySQL e ajuste as credenciais no arquivo <code>application.properties</code></li>
-    <li>Rode o projeto com <code>mvn spring-boot:run</code></li>
-    <li>Acesse o Swagger para testar os endpoints em <a href="http://localhost:8080/swagger-ui/">http://localhost:8080/swagger-ui/</a></li>
-</ol>
-
-<h2>Endpoints da API</h2>
-<ul>
-    <li><code>GET /clientes</code>: Lista todos os clientes</li>
-    <li><code>GET /clientes/{id}</code>: Busca um cliente por ID</li>
-    <li><code>POST /clientes</code>: Cria um novo cliente</li>
-    <li><code>PUT /clientes/{id}</code>: Atualiza um cliente existente</li>
-    <li><code>DELETE /clientes/{id}</code>: Exclui um cliente</li>
 </ul>
 
 <h2>Contribuições</h2>
